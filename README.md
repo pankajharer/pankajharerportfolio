@@ -1,6 +1,6 @@
 <br>
 <h1 align=center>
-<span> Responsive Portfolio Website </span>
+<span> Portfolio Website </span>
 <img align="center" src="./Assets/favicons/favicon.png" alt="" width="50" height="50">
 </h1>
 
@@ -10,7 +10,7 @@
 
 You can view the live demo of this portfolio website on Netlify:
 <br>
-Netlify: [Responsive Portfolio Website](https://ritoncharlox-portfolio-website.netlify.app/)
+Netlify: [Portfolio Website](https://ritoncharlox-portfolio-website.netlify.app/)
 
 ## Pages
 
