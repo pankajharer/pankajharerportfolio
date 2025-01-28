@@ -4,7 +4,7 @@
 <img align="center" src="./Assets/favicons/favicon.png" alt="" width="50" height="50">
 </h1>
 
-**This is a responsive portfolio website built using HTML, CSS, and JavaScript. It includes multiple pages showcasing various sections such as career information, education details, gallery, hobbies, skills, and testimonials. The contact page is fully functional and uses emailjs to send emails to users upon form submission.**
+**This is a responsive portfolio website built using HTML, CSS, and JavaScript. It includes multiple pages showcasing various sections such as career information, education details, gallery, hobbies, skills, and testimonials. The contact page is fully functional and uses emailjs to send EmailJS to users upon form submission.**
 
 ## Live Demo
 
