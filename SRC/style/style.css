@@ -9,17 +9,14 @@
 	list-style: none;
 }
 
-img {
-	
-}
 
 :root {
-	/* --bg-color: radial-gradient(circle at 60% 50%, rgba(238,174,202,1) 0%, rgb(127, 172, 224) 100%); */
-	--bg-color: radial-gradient(circle at 70% 50%, rgba(238, 174, 202, 1) 0%, rgb(145, 167, 192) 100%);
-	--text-color: #363636;
-	--main-color: brown;
-	/* --main-color: hsl(250, 52%, 36%); */
+    --bg-color: radial-gradient(circle at 90% 30%, rgb(42, 75, 124) 0%, rgb(5, 5, 5) 60%);
+    --text-color: #e0f7fa; /* Light cyan for contrast */
+    --main-color: #00bcd4; /* Vibrant cyan as the primary accent */
 }
+
+
 
 body {
 	min-height: 100vh;
@@ -47,7 +44,9 @@ header {
 	/* backdrop-filter: blur(4px); */
 }
 header.scrolled {
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 .logo {
 	display: flex;
@@ -262,6 +261,7 @@ header.scrolled {
 	width: 100%;
 	height: 100%;
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
 	cursor: pointer;
 	z-index: 100;
@@ -273,6 +273,7 @@ header.scrolled {
 
 .nav-LR-TC {
 	background: transparent;
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: none;
 }
 
@@ -363,6 +364,7 @@ header.scrolled {
 		border: 2px solid #ccc;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		background: rgba(255, 255, 255, 0.1);
+		-webkit-backdrop-filter: blur(4px);
 		backdrop-filter: blur(4px);
 		cursor: pointer;
 		display: flex;
@@ -389,6 +391,7 @@ header.scrolled {
 		border: 2px solid #ccc;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		background: rgba(255, 255, 255, 0.1);
+		-webkit-backdrop-filter: blur(4px);
 		backdrop-filter: blur(4px);
 		display: flex;
 		flex-direction: column;
@@ -466,7 +469,9 @@ header.scrolled {
 	border-radius: 10px 0px 0px 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 .contact-main .contact-section .cs-item {
@@ -527,7 +532,9 @@ header.scrolled {
 	color: var(--main-color);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 .contact-main .contact-section.csa-cs {
@@ -597,7 +604,9 @@ header.scrolled {
 	border: 2px solid #ccc;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 
 }
 
@@ -759,7 +768,8 @@ header.scrolled {
 	}
 
 	.contact-main .contact-full {
-		min-width: fit-content;
+
+		min-width: -webkit-fill-available;		
 		display: block;
 		padding: 0px;
 		/* margin-left: auto;
@@ -872,7 +882,9 @@ header.scrolled {
 	padding: 20px 10px 10px 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 @media (max-width: 700px) {
@@ -1114,7 +1126,9 @@ header.scrolled {
 		padding: 10px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		background: rgba(255, 255, 255, 0.1);
+		-webkit-backdrop-filter: blur(4px);
 		backdrop-filter: blur(4px);
+
 	}
 
 	.education-main .education-section {
@@ -1232,7 +1246,9 @@ header.scrolled {
 	padding: 0px 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 .gallery-main .gallery-section .column.australia .header .text {
@@ -1320,7 +1336,9 @@ header.scrolled {
 	border-radius: 10px 10px 0px 0px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 	/* color: var(--main-color); */
 }
 
@@ -1403,7 +1421,9 @@ header.scrolled {
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 	display: flex;
 	align-items: center;
 	/* justify-content: center; */
@@ -1451,7 +1471,9 @@ header.scrolled {
 	margin-right: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 .hobbies-main .hobbies-section .hobbies-header .header-line {
@@ -1499,7 +1521,9 @@ header.scrolled {
 	padding: 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 @media (max-width: 650px) {
 	.hobbies-main .hobbies-section .section {
@@ -1624,7 +1648,9 @@ header.scrolled {
 	border-radius: 110px 20px 20px 110px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 .testimonials-main .testimonials-section .section .block .image {
@@ -1743,7 +1769,9 @@ header.scrolled {
 	background-color: var(--main-color);
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.1);
+	-webkit-backdrop-filter: blur(4px);
 	backdrop-filter: blur(4px);
+
 }
 
 .footer .left {
