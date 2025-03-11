@@ -26,6 +26,8 @@ body {
 	color: var(--text-color);
 }
 
+
+
 header {
 	position: fixed;
 	/* position: relative; */
@@ -52,6 +54,14 @@ header.scrolled {
 	display: flex;
 	align-items: center;
 	/* margin-right: 25px; */
+}
+
+.header-project 
+{
+	color: #58B09C;
+	font-size: 1.1rem;
+	font-weight: 600;
+
 }
 
 .logo .main-icon {
@@ -1016,27 +1026,27 @@ header.scrolled {
 }
 
 .skills-main .skills-section .skills-group-row .communication .progress-block {
-	margin-left: 85%;
+	margin-left: 75%;
 }
 
 .skills-main .skills-section .skills-group-row .communication .progress-per {
-	width: 85%;
+	width: 75%;
 }
 
 .skills-main .skills-section .skills-group-row .team-work .progress-block {
-	margin-left: 70%;
+	margin-left: 85%;
 }
 
 .skills-main .skills-section .skills-group-row .team-work .progress-per {
-	width: 70%;
+	width: 85%;
 }
 
 .skills-main .skills-section .skills-group-row .management .progress-block {
-	margin-left: 65%;
+	margin-left: 70%;
 }
 
 .skills-main .skills-section .skills-group-row .management .progress-per {
-	width: 65%;
+	width: 70%;
 }
 
 .skills-main .skills-section .skills-group-row .creativity .progress-block {

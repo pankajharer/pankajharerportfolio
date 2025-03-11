@@ -10,6 +10,45 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <style>
+        .skill-container {
+            
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .skill-card {
+            width: 140px;
+            height: 140px;
+            background: #34343e;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+            border: 2px solid #00bcd4;
+        }
+        .skill-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 188, 212, 0.5);
+            transform: translateY(-5px);
+        }
+        .skill-card img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+        .skill-card h3 {
+            margin-top: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #00bcd4;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,56 +82,84 @@
                     <div class="border-line"></div>
                 </div>
                 <div class="skills">
-                    <div class="technical-skills skills-group-row">
-                        <div class="skills-group-header">Technical Skills</div>
-                        <div class="border-line"></div>
-                        <div class="skills-group">
-                            <div class="html skill">
-                                <div class="icon"><i class="fa-brands fa-html5 icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">HTML</div>
-                                    <div class="block-section"> Forms, Semantic Markup, Structures</div>
-                                    <div class="progress-block">70%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="css skill">
-                                <div class="icon"><i class="fa-brands fa-css3-alt icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">CSS</div>
-                                    <div class="block-section">Layout Design, Animations</div>
-                                    <div class="progress-block">60%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="js skill">
-                                <div class="icon"><i class="fa-brands fa-square-js icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">Javascript</div>
-                                    <div class="block-section">DOM Manipulation, Event Handling</div>
-                                    <div class="progress-block">50%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="python skill">
-                                <div class="icon"><i class="fa-brands fa-python icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">Python</div>
-                                    <div class="block-section">Web Development, Data Analysis</div>
-                                    <div class="progress-block">55%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class = "skill-container">
+                        <div class="skill-card">
+                            <img src="/Assets/skills/html.png" alt="Tech Logo">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/css-3.png" alt="Tech Logo">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/java-script.png" alt="Tech Logo">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/icons8-java-750.png" alt="Tech Logo">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/c-.png" alt="Tech Logo">
+                            <h3>C++</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/c-sharp.png" alt="Tech Logo">
+                            <h3>C#</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/icons8-aws-128.png" alt="Tech Logo">
+                            <h3>AWS</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/icons8-python-240.png
+                            " alt="Tech Logo">
+                            <h3>Python</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/icons8-git-144.png" alt="Tech Logo">
+                            <h3>Git</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/icons8-github-192.png" alt="Tech Logo">
+                            <h3>Github</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/Docker.png" alt="Tech Logo">
+                            <h3>Docker</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/Kubernetes.png" alt="Tech Logo">
+                            <h3>Kubernetes</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/html.png" alt="Tech Logo">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/css-3.png" alt="Tech Logo">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/java-script.png" alt="Tech Logo">
+                            <h3>JavaScript</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/icons8-java-750.png" alt="Tech Logo">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/c-.png" alt="Tech Logo">
+                            <h3>C++</h3>
+                        </div>
+                        <div class="skill-card">
+                            <img src="/Assets/skills/c-.png" alt="Tech Logo">
+                            <h3>C++</h3>
                         </div>
                     </div>
+                
+                
+                
                     <div class="professional-skills skills-group-row">
                         <div class="skills-group-header">Professional Skills</div>
                         <div class="border-line"></div>
@@ -102,7 +169,7 @@
                                 <div class="skill-block">
                                     <div class="block-header">communication</div>
                                     <div class="block-section">Clear Messaging, Active Listening</div>
-                                    <div class="progress-block">85%</div>
+                                    <div class="progress-block">75%</div>
                                     <div class="progress-bar">
                                         <div class="progress-per"></div>
                                     </div>
@@ -113,7 +180,7 @@
                                 <div class="skill-block">
                                     <div class="block-header">Team Work</div>
                                     <div class="block-section">Collaboration, Conflict Resolution</div>
-                                    <div class="progress-block">70%</div>
+                                    <div class="progress-block">80%</div>
                                     <div class="progress-bar">
                                         <div class="progress-per"></div>
                                     </div>
@@ -124,7 +191,7 @@
                                 <div class="skill-block">
                                     <div class="block-header">Management</div>
                                     <div class="block-section">Task Delegation, Time Management</div>
-                                    <div class="progress-block">65%</div>
+                                    <div class="progress-block">70%</div>
                                     <div class="progress-bar">
                                         <div class="progress-per"></div>
                                     </div>
@@ -145,7 +212,10 @@
                     </div>
                 </div>
             </div>
+            
         </main>
+    
+    
         <footer class="footer">
             <div class="left">
                 &copy; 2025 • Pankaj Harer • All Rights Reserved
@@ -157,6 +227,7 @@
             </div>
         </footer>
     </div>
+        
 
 
 
