@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+  <link rel="icon" href="/Assets/favicons/favicon.png" type="image/png" sizes="32x32">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+  <style>
+    
+    .projects-main {
+      flex: 1;
+      padding: 10rem;
+    }
+    
+    .projects-section {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .project-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      margin-top: 20rem;
+    }
+    
+    .project-header .text {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--cyan);
+      margin-right: 10rem;
+    }
+    
+    
+    
+    
+    
+    .project-card {
+      background-color: var(--card-bg);
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1;
+      transition: var(--transition);
+      box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    }
+    
+    .project-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 20px 30px -15px rgba(2, 12, 27, 0.7);
+    }
+    
+    .project-card .header {
+      margin-bottom: 1rem;
+    }
+    
+    .project-card .header-text {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-card .header-line {
+      height: 1px;
+      background-color: var(--header-line);
+      margin-bottom: 1rem;
+    }
+    
+    .project-card .text {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    
+    .project-link {
+      display: inline-block;
+      color: var(--cyan);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      position: relative;
+      padding: 0.5rem 0;
+    }
+    
+    .project-link::after {
+      content: '→';
+      margin-left: 0.5rem;
+      transition: var(--transition);
+    }
+    
+    .project-link:hover {
+      color: var(--cyan-hover);
+    }
+    
+    .project-link:hover::after {
+      transform: translateX(3px);
+    }
+    
+    
+    
+    
+    
+    @media (max-width: 768px) {
+      .navbar {
+        display: none;
+      }
+      
+      .menu-icon-container {
+        display: block;
+      }
+      
+      .row {
+        flex-direction: column;
+      }
+      
+      .project-card {
+        width: 100%;
+      }
+    }
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .project-card {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+    
+    .project-card:nth-child(1) { animation-delay: 0.1s; }
+    .project-card:nth-child(2) { animation-delay: 0.2s; }
+    .project-card:nth-child(3) { animation-delay: 0.3s; }
+    .project-card:nth-child(4) { animation-delay: 0.4s; }
+  </style>
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <a href="../../index.html" class="logo"><span class="main-icon"></span><span>Pankaj</span></a>
+
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="./skills.html">Skills</a>
+      <a href="./education.html">Education</a>
+      <a href="./career.html">Career</a>
+      <a href="./projects.html" class="active">Projects</a>
+    </div>
+    
+    <div class="main">
+      <a href="contact.html" class="user main-items"><i class="fas fa-envelope cm-icon"></i>Contact Me</a>
+      <div class="main-items menu-icon-container" id="menu-icon-js">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <main class="projects-main">
+      <div class="projects-section">
+        <div class="project-header">
+            <div class="text">Projects</div>
+            <div class="header-line"></div>
+        </div>
+        
+        <div class="section">
+          <div class="row first">
+            <div class="project-card">
+              <div class="header">
+                <div class="header-text">DiabEase - Diabetes Monitoring App</div>
+                <div class="header-line"></div>
+              </div>
+              <div class="text">
+                Developed an Android application for real-time diabetes detection and monitoring using machine learning algorithms. Integrated with health tracking features and recovery recommendations.
+              </div>
+              <a rel = "noopener" href="https://github.com/pankajharer/DiabEase-App" class="project-link" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+              <div class="header">
+                <div class="header-text">Virtual Wardrobe</div>
+                <div class="header-line"></div>
+              </div>
+              <div class="text">
+                A real-time virtual try-on system built with OpenCV and machine learning. Allows users to try accessories like glasses and hats using webcam feed and smart overlay detection.
+              </div>
+              <a rel = "noopener" href="https://github.com/pankajharer/virtual-wardrobe" class="project-link" target="_blank">View Project</a>
+            </div>
+          </div>
+
+          <div class="row second">
+            <div class="project-card">
+              <div class="header">
+                <div class="header-text">Sign Language Communicator</div>
+                <div class="header-line"></div>
+              </div>
+              <div class="text">
+                Built a Python application that converts sign language gestures into text and speech using TensorFlow and Mediapipe. Helps bridge communication between deaf and hearing individuals.
+              </div>
+              <a rel = "noopener" href="https://github.com/pankajharer/sign-language-communicator" class="project-link" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+              <div class="header">
+                <div class="header-text">Help Desk System</div>
+                <div class="header-line"></div>
+              </div>
+              <div class="text">
+                Created a full-stack help desk system using Django, React, and WebSockets for real-time ticket updates. Includes user roles, ticket tracking, and admin dashboards.
+              </div>
+              <a rel = "noopener" href="https://github.com/pankajharer/helpdesk-system" class="project-link" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="left">
+        &copy; 2025 • Pankaj Harer • All Rights Reserved
+      </div>
+      <div class="right">
+        <div class="social"><a rel=noopener title="Insta" href="https://www.instagram.com/pankaj_harer_" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="social"><a rel=noopener title="LinkedIn" href="https://www.linkedin.com/in/pankaj-harer-105659245/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="social"><a rel=noopener title="Github" href="https://github.com/pankajharer" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="nav-touch-close" id="nav-tc-js"></div>
+
+  <script type="text/javascript" src="../script/script.js"></script>
+
+</body>
+
+</html>
