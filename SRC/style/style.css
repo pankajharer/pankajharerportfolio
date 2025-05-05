@@ -1093,6 +1093,7 @@ header.scrolled {
 	/* height: 190px; */
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 3.6rem;
 	/* margin-bottom: 50px; */
 	/* justify-content: space-between; */
 }
@@ -1109,6 +1110,7 @@ header.scrolled {
 	/* min-width: 200px; */
 	border-radius: 10px;
 	border: 2px solid var(--main-color);
+	
 }
 
 .education-main .education-section .study .line {

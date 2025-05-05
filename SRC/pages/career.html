@@ -2,119 +2,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Career</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="icon" href="Assets/favicons/favicon.png" type="image/png" sizes="32x32">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career</title>
+  <link rel="stylesheet" type="text/css" href="../style/style.css" />
+  <link rel="icon" href="/Assets/favicons/favicon.png" type="image/png" sizes="32x32" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <style>
+    .header-line {
+      width: 100px;
+      height: 3px;
+      background-color: #00bcd4;
+      margin-bottom: 2.5rem;
+    }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 9rem auto;
+      padding: 1rem;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #00bcd4;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-entry {
+      padding: 1rem 2rem;
+      position: relative;
+      background-color: inherit;
+      width: 50%;
+    }
+
+    .timeline-entry::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #00bcd4;
+      border: 4px solid #0a0f1c;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      left: 50%;
+    }
+
+    .left::after {
+      right: -10px;
+    }
+
+    .right::after {
+      left: -10px;
+    }
+
+    .timeline-entry-content {
+      background-color: #111827;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      border-left: 4px solid #00bcd4;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-entry-content:hover {
+      transform: translateY(-5px);
+    }
+
+    .company-name {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #00bcd4;
+    }
+
+    .duration {
+      font-size: 0.9rem;
+      color: #b0bec5;
+    }
+
+    .description {
+      margin-top: 0.5rem;
+      line-height: 1.6;
+      color: #e0f7fa;
+    }
+
+    @media screen and (max-width: 768px) {
+      .timeline::after {
+        left: 20px;
+      }
+
+      .timeline-entry {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 25px;
+      }
+
+      .timeline-entry::after {
+        left: 10px;
+      }
+
+      .right {
+        left: 0%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
-
-    <header class="header" id="header">
-        <a href="../../index.html" class="logo"><span class="main-icon"></span><span>Pankaj</span></a>
-
-        <div class="navbar">
-            <a href="/index.html">Home</a>
-            <a href="./skills.html">skills</a>
-            <a href="./education.html">Education</a>
-            <a href="./career.html" class="active">Career</a>
-            <a href="./projects.html" >Projects</a>
-        </div>
-
-        <div class="main">
-            <a href="contact.html" class="user main-items"><i class="fas fa-envelope cm-icon"></i>Contact Me</a>
-            <div class="main-items menu-icon-container" id="menu-icon-js">
-                <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
-        </div>
-    </header>
-
-    <div class="page">
-        <main class="career-main">
-            <div class="career-section">
-                <div class="professional-summary">
-                    <div class="ps-header career-header">
-                        <div class="text">Professional Summary</div>
-                        <div class="header-line"></div>
-                    </div>
-                    <div class="texts"> Final-year B.Tech Computer Science and Engineering student
-                        with practical experience in software development, backend
-                        engineering, and cloud computing. Proficient in programming
-                        languages such as C++,Java and Python.
-                        Demonstrated expertise in developing real-world projects and
-                        completing impactful internships at reputed organizations.
-                        Proven problem-solving abilities, strong analytical skills, and a
-                        commitment to learning and applying cutting-edge technologies.</div>
-                </div>
-                <div class="career-goals">
-                    <div class="cg-header career-header">
-                        <div class="text">Career goals</div>
-                        <div class="header-line"></div>
-                    </div>
-                    <div class="goals">
-                        <div class="goals-row short-term-goals">
-                            <div class="goals-header">
-                                <div class="text">Short-Term Goals</div>
-                                <div class="header-line"></div>
-                            </div>
-                            <div class="texts">
-                                <div class="text-row">
-                                    <div class="tr-icon"></div>Develop technical skills in web development.
-                                </div>
-                                <div class="text-row">
-                                    <div class="tr-icon"></div>Gain practical experience through collaboration.
-                                </div>
-                                <div class="text-row">
-                                    <div class="tr-icon"></div>Build a strong portfolio.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="goals-row long-term-goals">
-                            <div class="goals-header">
-                                <div class="text">Long-Term Goals</div>
-                                <div class="header-line"></div>
-                            </div>
-                            <div class="texts">
-                                <div class="text-row">
-                                    <div class="tr-icon"></div>Establish a web development agency.
-                                </div>
-                                <div class="text-row">
-                                    <div class="tr-icon"></div>Lead a team of creative professionals.
-                                </div>
-                                <div class="text-row">
-                                    <div class="tr-icon"></div>Contribute to business growth through online solutions.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="left">
-                &copy; 2025 • Pankaj Harer • All Rights Reserved
-            </div>
-            <div class="right">
-                <div class="social"><a rel=noopener title="Insta"      href="https://www.instagram.com/pankaj_harer_" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social"><a rel=noopener title="LinkedIn" href="https://www.linkedin.com/in/pankaj-harer-105659245/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                <div class="social"><a rel=noopener title="Github"   href="https://github.com/pankajharer" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-            </div>
-        </footer>
+  <header class="header" id="header">
+    <a href="../../index.html" class="logo"><span class="main-icon"></span><span>Pankaj</span></a>
+    <div class="navbar">
+      <a href="/index.html">Home</a>
+      <a href="./skills.html">Skills</a>
+      <a href="./education.html">Education</a>
+      <a href="./career.html" class="active">Career</a>
+      <a href="./projects.html">Projects</a>
     </div>
-        
-        
-        
-        
-        
-        <div class="nav-touch-close" id="nav-tc-js"></div>
+    <div class="main">
+      <a href="contact.html" class="user main-items"><i class="fas fa-envelope cm-icon"></i>Contact Me</a>
+      <div class="main-items menu-icon-container" id="menu-icon-js">
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </div>
+  </header>
 
-    <script type="text/javascript" src="../script/script.js"></script>
+  <div class="page">
+    <main class="career-main">
+      <div class="career-section">
+        <div class="professional-summary">
+          <div class="ps-header career-header">
+            <div class="text">Career Journey</div>
+            <div class="header-line"></div>
+          </div>
+          <div class="texts">
+            Final-year B.Tech Computer Science and Engineering student with practical experience in software development,
+            backend engineering, and cloud computing. Proficient in programming languages such as C++, Java, and Python.
+            Demonstrated expertise in developing real-world projects and completing impactful internships at reputed
+            organizations. Proven problem-solving abilities, strong analytical skills, and a commitment to learning and
+            applying cutting-edge technologies.
+          </div>
+        </div>
 
+        <section class="timeline">
+            <div class="timeline-entry left">
+                <div class="timeline-entry-content">
+                  <div class="company-name">Prescient Technologies</div>
+                  <div class="duration">March 2025 – Present</div>
+                  <div class="description">
+                    Continuing to evolve as a Software Engineer Intern, expanding skillsets in .Net Framework, C#, scalable architecture, and java.
+                  </div>
+                </div>
+            </div>
+
+          <div class="timeline-entry right">
+            <div class="timeline-entry-content">
+              <div class="company-name">Allvue Systems</div>
+              <div class="duration">Aug 2024 – Nov 2024</div>
+              <div class="description">
+                Contributed as a Backend Developer Intern, focused on dynamic user-focused dashboards ,.Net APIs ,SQL stored procedures using SSMS, improving database efficiency and performance.
+
+              </div>
+            </div>
+          </div>
+          <div class="timeline-entry left">
+            <div class="timeline-entry-content">
+              <div class="company-name">Comptech IT Solutions</div>
+              <div class="duration">Jun 2024 – Jul 2024</div>
+              <div class="description">
+                Worked as a Software Developer Intern using Django and SQLite. Built web solution and handled REST APIs.
+              </div>
+            </div>
+          </div>
+
+          
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="left">&copy; 2025 • Pankaj Harer • All Rights Reserved</div>
+      <div class="right">
+        <div class="social"><a rel=noopener title="Insta" href="https://www.instagram.com/pankaj_harer_" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="social"><a rel=noopener title="LinkedIn" href="https://www.linkedin.com/in/pankaj-harer-105659245/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+        <div class="social"><a rel=noopener title="Github" href="https://github.com/pankajharer" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="nav-touch-close" id="nav-tc-js"></div>
+  <script type="text/javascript" src="../script/script.js"></script>
 </body>
 
 </html>
